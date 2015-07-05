@@ -19,6 +19,6 @@ def generator(data):
         return []
 
     result = []
-    for (i,_) in enumerate(rules):
+    for _ in rules:
         result.extend(map(lambda x: time.strftime(_, x), data))
     return list(set(result))
