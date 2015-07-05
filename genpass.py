@@ -12,6 +12,7 @@ class genpass(object):
     def load_models(self, models):
         for plugin_name, plugin_model in models.iteritems():
             try:
+                if not plugin_model['data']: continue
                 _import_path = '.'.join(PLUGINS_OPPOSITE_PATH.split(sep))
                 plugin_path = '%s.%s' % (_import_path, plugin_model['plugin'])
                 _plugin = __import__(plugin_path, fromlist='*')
