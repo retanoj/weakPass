@@ -5,9 +5,11 @@ from itertools import permutations, product
 from config import *
 
 class genpass(object):
-    def __init__(self):
+    def __init__(self,models):
         self.plugins = {}
         self.passwords = []
+
+        self.load_models(models)
 
     def load_models(self, models):
         for plugin_name, plugin_model in models.iteritems():

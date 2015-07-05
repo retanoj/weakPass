@@ -9,8 +9,7 @@ def main():
     with open('config.json') as inf:
         models = json.loads(inf.read())
     if models and isinstance(models, dict):
-        genpass = gp()
-        genpass.load_models(models)
+        genpass = gp(models)
         genpass.generator_weakpass()
         genpass.save_to_file('result.txt')
 
