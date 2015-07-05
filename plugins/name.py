@@ -2,7 +2,7 @@
 __author__ = 'Jonater'
 
 from lib.pinyin import PinYin
-from config import WEAKPASS_DICT_PATH,PINYIN_PATH
+from config import PINYIN_PATH
 
 rules = [
     lambda x: ''.join(x),

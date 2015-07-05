@@ -1,19 +1,19 @@
 {
     "email": {
         "plugin": "email",
-        "data": []
+        "data": ["guanliyuan@qq.com"]
     },
     "username": {
         "plugin": "username",
-        "data": []
+        "data": ["admin"]
     },
     "QQ": {
         "plugin": "QQ",
-        "data": []
+        "data": ["333222111"]
     },
     "mobile": {
         "plugin": "mobile",
-        "data": []
+        "data": ["13818810000"]
     },
     "birth": {
         "plugin": "birth",
@@ -23,8 +23,12 @@
         "plugin": "name",
         "data": ["张泡泡"]
     },
+    "weakpass_dict": {
+        "plugin": "weakpassdict",
+        "data": ["data/weakpass_dict.txt"]
+    },
     "otherinfo":{
         "plugin": "misc",
-        "data": []
+        "data": ["eyou","yahoo"]
     }
 }
