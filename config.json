@@ -1,0 +1,30 @@
+{
+    "email": {
+        "plugin": "email",
+        "data": []
+    },
+    "username": {
+        "plugin": "username",
+        "data": []
+    },
+    "QQ": {
+        "plugin": "QQ",
+        "data": []
+    },
+    "mobile": {
+        "plugin": "mobile",
+        "data": []
+    },
+    "birth": {
+        "plugin": "birth",
+        "data": ["1991-03-28"]
+    },
+    "name": {
+        "plugin": "name",
+        "data": ["张泡泡"]
+    },
+    "otherinfo":{
+        "plugin": "misc",
+        "data": []
+    }
+}
