@@ -28,9 +28,9 @@ class genpass(object):
         combine_list = []
 
         for _, plugin in self.plugins.iteritems():
-            model = plugin['handle']
+            handle = plugin['handle']
             try:
-                combine_list.append( model.generator(plugin['data']) )
+                combine_list.append( handle.generator(plugin['data']) )
             except Exception,e:
                 print 'gen pwd from <%s> failed.' % plugin['name'], e
 
