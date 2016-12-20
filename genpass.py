@@ -41,7 +41,9 @@ class genpass(object):
         for i in xrange(3):
             for cl in permutations(combine_list, i+1):
                 for pwd in product(*cl):
-                    pwds.append(''.join(pwd))
+                    _pwd = ''.join(pwd)
+                    if 5 <= len(_pwd) <= 20: 
+                        pwds.append(''.join(pwd))
 
         print 'generate weak passwords done.'
         self.passwords = list(set(pwds))
